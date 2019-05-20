@@ -56,7 +56,7 @@ const upcomingLaunches = () => {
         })
     })
 }
-/*  count down code AKA "Best of a code" - working with dates api*/
+/*  count down code AKA "Beast of a code" - working with dates api*/
 const createCountDown = launchDate => {
   const countDownDate = new Date(launchDate).getTime()
   clearInterval(countDown)
