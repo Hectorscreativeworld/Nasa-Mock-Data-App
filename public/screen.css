@@ -13,12 +13,14 @@ body {
   min-height: 100%;
 }
 
+
+
 /* // nav Bar // */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%
+  padding: 30px 10%;
 }
 
 .nav-title {
@@ -37,7 +39,7 @@ header {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #512DA8;
+  background-color: #512da8;
   color: white;
 }
 
@@ -58,13 +60,13 @@ header {
 }
 
 .nav-links li a:hover {
-  background-color: #FFC107;
+  background-color: #ffc107;
   padding: 1rem;
 }
 
 /* Daily Picture */
 
-.daily-picture {
+.dailyPicture {
   color: white;
   display: flex;
   justify-content: center;
@@ -72,17 +74,25 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   padding: 10rem;
+  font-size: 2rem;
+  /* height: 100%;
+  width: 100%; */
 }
 
 /* photo-info */
 .photo-info {
-  font-size: 13px;
+  font-size: 12px;
   text-align: center;
+}
+
+.copyrightTextInfo {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* upcoming-text */
 .upcoming-text {
-  background-color: #FFC107;
+  background-color: #ffc107;
 }
 
 /* article */
@@ -90,42 +100,84 @@ header {
   display: flex;
   justify-content: space-between;
   justify-content: center;
-  margin-top: 20px;
-
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
 
 .Btn {
   display: flex;
   justify-content: center;
-
 }
 
-.button-r {
+.buttonRight {
   display: flex;
   justify-content: center;
-  background-color: #FFC107;
-  border-radius: 0 2rem 2rem 0;
+  background-color: #ffc107;
+  border-radius: 1.5rem 0 0 1.5rem;
+
   font-size: 3rem;
-  /* padding: 5px 10px; */
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  padding-left: 2rem;
   cursor: pointer;
 }
 
-.nasa-text {
+.right-arrow {
+  margin: 0;
+  padding: 0;
+}
+
+.launchTitle {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.mainLaunchInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #EDEDED;
+  display: block;
+  background-color: #ededed;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 90%;
+  padding: 4%;
 }
 
-.button-l {
 
+.buttonLeft {
   display: flex;
   justify-content: center;
-
-  background-color: #FFC107;
-  border-radius: 2rem 0 0 2rem;
+  background-color: #ffc107;
+  border-radius: 0 1.5rem 1.5rem 0;
   font-size: 3rem;
   cursor: pointer;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  padding-right: 2rem;
+}
+
+.left-arrow {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 /* mission-statement */
@@ -134,12 +186,10 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #D0C4E9;
-
+  background-color: #d0c4e9;
 }
 
 .mission-statement p {
-
   font-size: 1.2rem;
   margin-left: 10%;
   margin-right: 10%;
@@ -160,5 +210,9 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #673AB6;
+  background-color: #673ab6;
+}
+
+.sdg-link {
+  color: white;
 }

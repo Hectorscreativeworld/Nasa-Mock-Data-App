@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Astro Remake</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"
+    integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous">
+  </script>
+  ```
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/screen.css">
 </head>
@@ -20,50 +24,74 @@
       </ul>
     </nav>
   </header>
-  <section class="daily-picture"
-    style="background-image: url(&quot;https://apod.nasa.gov/apod/image/1905/TotnBefore_Dai_1080.jpg&quot;);">
+  <section class="dailyPicture">
     <h1 class="text-primary-color">Explore your universe.</h1>
   </section>
   <!-- photo-info -->
   <div class="photo-info">
-    <p> copyright: Jeff DaiTWAN | title: Dark Skies: Turn on the Night</p>
+    <p class="copyrightTextInfo"> </p>
   </div>
+  <!-- Upcoming SpaceX Launches -->
   <section class="upcoming-text">
     <h1>Upcoming SpaceX Launches</h1>
   </section>
+  <!-- Nasa INFO Section -->
   <section class="nasa-info">
-    <div class="Btn">
-      <button class="button-r">
-        < </button> </div> <ul class="nasa-text">
-          <p>Starlink 1 (Demo)</p>
-          <p>
-            SpaceX will launch dozens of Starlink demonstration satellites from SLC-40, Cape Canaveral AFS. Starlink is
-            a
-            low Earth orbit broadband internet constellation developed and owned by SpaceX which will eventually consist
-            of nearly 12 000 satellites and will provide low latency internet service to ground terminals around the
-            world. Two prototype satellites, Microsats 2a and 2b, were launched from Vandenberg AFB in February 2018.
-            The
-            booster for this mission will land on OCISLY.</p>
-          <p>Launched!</p>
-          <p>Cape Canaveral Air Force Station Space
-            Launch Complex 40
-          </p>
 
-          </ul>
-          <button class="button-l ">
-            ></button>
+    <button class="buttonLeft">
+      <span class="left-angle" style="font-size: 2rem; color: black;">
+        <i class="fas fa-angle-left"></i>
+      </span>
+
+    </button>
+    <div class="mainLaunchInfo">
+
+
+      <p class="center">
+        <span class="spaceship" style="font-size: 2rem; color: black;">
+          <i class="fas fa-space-shuttle"></i>
+        </span>
+        <span class="launchTitle"></span>
+      </p>
+
+      <p><span class="i-Circle" style="font-size: 2rem; color: black;">
+          <i class="fas fa-info-circle"></i>
+        </span>
+        <span class="launchDescription"></span> </p>
+      <hr>
+      <p>
+        <span class="clock" style="font-size: 2rem; color: black;">
+          <i class="fas fa-clock"></i>
+          <span class="countDown"></span>
+        </span>
+      </p>
+      <hr>
+      <p><span class="i-Circle" style="font-size: 2rem; color: black;">
+          <i class="fas fa-map-marked-alt"></i>
+        </span>
+        <span class="launchLocation"></span>
+
+      </p>
+    </div>
+
+    <button class="buttonRight">
+      <span class="right-angle" style="font-size: 2rem; color: black;">
+        <i class="fas fa-angle-right"></i>
+      </span>
+    </button>
   </section>
-  <section class="mission-statement">
+  <section class="mission-statement">x
     <h1 class="our-mission">Our Mission Statement</h1>
-    <p>Ancient alien extraterrestrial origin sanskrit Annunaki, helicopter heiroglyph aircraft pre-colonial
+    <p class="missionDescription">Ancient alien extraterrestrial origin sanskrit Annunaki, helicopter heiroglyph
+      aircraft pre-colonial
       aerodynamics, ancient alien theorists weightless sanskrit. Star people Easter island inter-dimensional
       crystal skull anti-gravity vimana, the answer is a resounding YES... Mainstream archaelogy golden disk
       targeted mutation, ancient alien theorists otherworldly visitors worm hole space brothers SETI space time.
     </p>
   </section>
+  </section>
   <footer class="main-footer">
-    <p>Made with <span role="img" aria-label="heart"></span><a class="secondary-text-color"
-        href="https://suncoast.io">SDG</a></p>
+    <p>Made with <span>💛</span> <span>at </span><a class="sdg-link" href="https://suncoast.io"> SDG</a></p>
   </footer>
   <script src="/main.js" charset="utf-8"></script>
 </body>
