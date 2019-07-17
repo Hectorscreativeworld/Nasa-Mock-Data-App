@@ -1,16 +1,18 @@
 window.addEventListener('load', () => {
   let long
   let lat
-  let temperatureDescription = document.querySelector('.temperature-description')
+  let temperatureDescription = document.querySelector(
+    '.temperature-description'
+  )
   let temperatureDegree = document.querySelector('.temperature-degree')
   let locationTimeZone = document.querySelector('.location-timezone')
-
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(position => {
       long = position.coords.longitude
       lat = position.coords.latitude
 
+      // api Key wONIfJz1hAE0l097YuBqesdJkFIY4Rd5OUMbp9Yg
       const proxy = 'https://cors-anywhere.herokuapp.com/'
       const api = `${proxy}https://api.darksky.net/forecast/ca7a9281ca18b1588a1e60e0f0130fd2/${lat},${long}`
 
@@ -19,11 +21,7 @@ window.addEventListener('load', () => {
           return response.json()
         })
         .then(data => {
-          const {
-            temperature,
-            summary,
-            icon
-          } = data.currently
+          const { temperature, summary, icon } = data.currently
 
           temperatureDegree.textContent = temperature
           temperatureDescription.textContent = summary
@@ -42,8 +40,6 @@ window.addEventListener('load', () => {
     return skycons.set(iconID, Skycons[currentIcon])
   }
 })
-const main = () => {
-
-}
+const main = () => {}
 
 document.addEventListener('DOMContentLoaded', main)

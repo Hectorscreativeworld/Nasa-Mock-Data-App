@@ -3,7 +3,7 @@ let countDown = null
 
 // top daily picture api call
 const dailyPictureImage = () => {
-  fetch('https://sdg-astro-api.herokuapp.com/api/Nasa/apod')
+  fetch('https://wallpapersafari.com/nasa-space-shuttle-wallpaper/"')
     .then(response => {
       return response.json()
     })
